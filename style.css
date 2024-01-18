@@ -1,0 +1,260 @@
+/*CSS RESET*/
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+/* CSS VARIABLES*/
+:root{
+    --navbar-height:59px;
+}
+
+/* NAVIGATION BAR*/
+
+
+#navbar::before {
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+    top: 0px;
+    left: 0px;
+    
+}
+
+#navbar {
+    position: sticky;
+    top: 0px;
+    display: flex;
+    align-items: center;}
+
+/* NAVIGATION BAR : LOGO AND IMAGE*/
+#logo{
+    margin: 10px 34px;
+}
+
+#logo img{
+    height: 59px;
+    margin: 3px 6px;
+}
+
+/*NAVIGATION BAR :list styling */
+
+#navbar ul {
+    display: flex;
+    font-family: 'IBM Plex Serif', serif;
+}
+
+#navbar ul li{
+    list-style: none;
+    font-size: 1.3rem;
+}
+
+#navbar ul li a{
+    color: white;
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+}
+
+/*HOME SECTION*/
+
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    height: 550px;
+    justify-content: center;
+    align-items: center;
+}
+
+#home::before{
+    content: "";
+    background: url('/bg1.jpg') no-repeat center center/cover;
+    position: absolute;
+    height: 642px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.89;
+    top: 0px;
+    left: 0px;
+
+}
+/* SERVICES CENTER */
+
+#services{
+    margin: 34px;
+    display: flex;
+}
+#services .box{
+    border: 2px solid brown;
+    padding: 30px;
+    margin: 3px 6px;
+    border-radius: 28px;
+    background: rgb(224, 220, 220);
+    margin-bottom: 18px;
+}
+#services .box img{
+    height: 165px;
+    display: block;
+    margin: auto;
+}
+#services .box p{
+    font-family: 'IBM Plex Serif', serif;
+}
+
+/* CLIENT SECTION */
+
+#client-section{
+    position:relative;
+    
+}
+
+#client-section::before{
+    content: "";
+    background: url('/bg4.jpg');
+    position:absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.3;
+    
+   
+     
+
+}
+
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 90px;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    
+}
+.client-item{
+    padding: 0px;
+    overflow:hidden;
+    
+    
+}
+
+#clients img{
+    height: 130px;
+    
+}
+/* CONTACTS SECTION */
+#contact{
+    position:relative;
+     
+}
+#contact::before{
+    content: "";
+    background: url('/contact.jpg') no-repeat center center/cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.7;
+    
+     
+}
+#contact-box{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+    
+}
+#contact-box input,
+#contact-box textarea{
+    margin-top: 2px;
+    margin-bottom: 20px;
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 9px;
+    font-size: 1.0rem;
+    gap: 30px;
+}
+#contact-box form{
+    width: 40%;
+}
+#contact-box label{
+    font-size: 1.2rem;
+    font-family: 'IBM Plex Serif', serif;
+}
+footer{
+    background: black;
+    color: white;
+    padding: 9px 20px;
+}
+/* UTILITY CLASSES */
+
+#home h1{
+    color: white;
+    text-align: center;
+    font-family: 'IBM Plex Serif', serif;
+}
+
+#home p{
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'IBM Plex Serif', serif;
+}
+
+
+.h-primary{
+    font-family: 'IBM Plex Serif', serif;
+    font-size: 3.2rem;
+    padding: 12px;
+}
+    
+.h-secondary{
+    font-family: 'IBM Plex Serif', serif;
+    font-size: 2.3rem;
+    padding: 12px;
+} 
+
+.btn{
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color: brown;
+    color: white;
+    margin: 24px;
+    font-size: 1.1rem;
+    border-radius: 10px;
+    cursor: pointer;
+}
+  
+.center{
+    text-align: center;
+}
+.btn1{
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color: brown;
+    color: white;
+    margin: 24px;
+    font-size: 1.1rem;
+    border-radius: 10px;
+    cursor: pointer;
+    
+}
+
+
+
